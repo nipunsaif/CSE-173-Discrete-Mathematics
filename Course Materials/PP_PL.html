@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<link rel="stylesheet" href="main.css" type="text/css" />
+<title>Practice Problems: CSE 173</title>
+<!-- MathJax -->
+	<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	</script>
+	<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+	  TeX: { equationNumbers: { autoNumber: "AMS" } }
+	});
+	</script>
+<!-- End MathJax -->
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">Menu</div>
+<div class="menu-item"><a href="index.html">Home</a></div>
+<div class="menu-category">Course Information</div>
+<div class="menu-item"><a href="CSE_173_content.pdf">Syllabus</a></div>
+<div class="menu-category">Lectures</div>
+<div class="menu-item"><a href="CSE_173/CSE_173_INTRODUCTION.pdf">Part&nbsp;0:&nbsp;Introduction</a></div>
+<div class="menu-item"><a href="CSE_173/CSE_173_PROPOSITIONAL_LOGIC_FALL_2018.pdf">Part&nbsp;1:&nbsp;Propositional&nbsp;Logic</a></div>
+<div class="menu-item"><a href="CSE_173/CSE_173_PREDICATE_QUANTIFIER_FALL_2018.pdf">Part&nbsp;2:&nbsp;Predicate&nbsp;Logic</a></div>
+<div class="menu-item"><a href="CSE_173/CSE_173_RULE_OF_INFERENCE_FALL_2018.pdf">Part&nbsp;3:&nbsp;Rules&nbsp;of&nbsp;Inference</a></div>
+<div class="menu-item"><a href="CSE_173/CSE_173_PROOF_TECHNIQUES_FALL_2018.pdf">Part&nbsp;4:&nbsp;Proof&nbsp;Techniques</a></div>
+<div class="menu-item"><a href="CSE_173/CSE_173_SET_FUNCTIONS.pdf">Part&nbsp;5:&nbsp;Set,&nbsp;Functions</a></div>
+<div class="menu-item"><a href="CSE_173/CSE_173_SUM_SEQUENCE.pdf">Part&nbsp;6:&nbsp;Sum,&nbsp;Sequence</a></div>
+<div class="menu-item"><a href="CSE_173/CSE_173_RELATION.pdf">Part&nbsp;7A:&nbsp;Relations</a></div>
+<div class="menu-item"><a href="CSE_173/CSE_173_RELATION_II.pdf">Part&nbsp;7B:&nbsp;Relations</a></div>
+<div class="menu-item"><a href="CSE_173/CSE_173_RECURSION_COUNTING.pdf">Part&nbsp;8:&nbsp;Recursion&nbsp;and&nbsp;Counting</a></div>
+<div class="menu-item"><a href="CSE_173/CSE_173_GRAPHS.pdf">Part&nbsp;9:&nbsp;Graphs</a></div>
+<div class="menu-category">Homeworks</div>
+<div class="menu-item"><a href="CSE_173/CSE_173_HW_0_FALL_2018.pdf">HW0:&nbsp;Truth&nbsp;Table,&nbsp;Propositions</a></div>
+<div class="menu-item"><a href="CSE_173/CSE_173_HW_0_FALL_2018_SOLN.pdf">HW0:&nbsp;Solution</a></div>
+<div class="menu-item"><a href="CSE_173/CSE_173_HW_1_FALL_2018.pdf">HW1:&nbsp;Propositional&nbsp;logic&nbsp;and&nbsp;Quantifiers</a></div>
+<div class="menu-item"><a href="CSE_173/CSE_173_HW_1_FALL_2018_SOLN.pdf">HW1:&nbsp;Solution</a></div>
+<div class="menu-item"><a href="CSE_173/CSE_173_HW_2_FALL_2018.pdf">HW2:&nbsp;Predicate&nbsp;logic&nbsp;and&nbsp;Quantifiers</a></div>
+<div class="menu-item"><a href="CSE_173/CSE_173_HW_2_FALL_2018_SOLN.pdf">HW2:&nbsp;Solution</a></div>
+<div class="menu-item"><a href="CSE_173/CSE_173_HW_3_FALL_2018.pdf">HW3:&nbsp;Proof&nbsp;Techniques</a></div>
+<div class="menu-item"><a href="CSE_173/CSE_173_HW_3_FALL_2018_SOLN.pdf">HW3:&nbsp;Solution</a></div>
+<div class="menu-item"><a href="CSE_173/CSE_173_HW_4_FALL_2018.pdf">HW4:&nbsp;Sets&nbsp;and&nbsp;Functions</a></div>
+<div class="menu-item"><a href="CSE_173/CSE_173_HW_4_FALL_2018_SOLN.pdf">HW4:&nbsp;Solution</a></div>
+<div class="menu-category">Additional Tasks</div>
+<div class="menu-item"><a href="CSE_173_IN_CLASS.html">Propositional&nbsp;Logic</a></div>
+<div class="menu-item"><a href="CSE_173/CSE_173_GROUP_TASK.pdf">Group&nbsp;Task</a></div>
+<div class="menu-category">Practice Problems</div>
+<div class="menu-item"><a href="PP_PL.html" class="current">Set&nbsp;1:&nbsp;Logic&nbsp;and&nbsp;Proofs</a></div>
+<div class="menu-item"><a href="CSE_173/CSE_173_PRACTICE_PROBLEMS_ALL.pdf">Set&nbsp;2:&nbsp;Selected&nbsp;Exercise</a></div>
+<div class="menu-item"><a href="CSE_173/CSE_173_PRACTICE_PROBLEMS.pdf">Solved&nbsp;Problems&nbsp;I</a></div>
+<div class="menu-item"><a href="CSE_173/CSE_173_PRACTICE_PROBLEMS_II.pdf">Solved&nbsp;Problems&nbsp;II</a></div>
+<div class="menu-category">Student Evaluation</div>
+<div class="menu-item"><a href="CSE_173_EXAM.html">Exams&nbsp;and&nbsp;Quizzes</a></div>
+<div class="menu-category">Additional Content</div>
+<div class="menu-item"><a href="CSE_173/CHE_173_NUMBER_SETS.pdf">Number&nbsp;Sets</a></div>
+<div class="menu-item"><a href="CSE_173_RULES_OF_INFERENCE.html">Logic</a></div>
+<div class="menu-item"><a href="CSE_173_CRIB_SHEET.html">Crib&nbsp;Sheet</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Practice Problems: CSE 173</h1>
+<div id="subtitle"></div>
+</div>
+<h2>Logic and Proofs</h2>
+<p>
+The below list is not exhaustive; you are requested not to restrict yourself only to these sets of practice problems. <br />
+We <b>will update the list</b> as needed. 
+
+</p>
+<h3>From  Kenneth H. Rosen, 7th edition</h3>
+<p></p>
+<table id="rosen_problem_set_1">
+<tr class="r1"><td class="c1"><b>Topic</b> </td><td class="c2"> <b>Section</b> </td><td class="c3"> <b>Problems</b> </td></tr>
+<tr class="r2"><td class="c1">Propositional Logic </td><td class="c2"> 1.1 </td><td class="c3"> 9, 12, 14, 15, 19, 26, 27  </td></tr>
+<tr class="r3"><td class="c1">Applications of Propositional Logic </td><td class="c2"> 1.2 </td><td class="c3"> 7 </td></tr>
+<tr class="r4"><td class="c1">Propositional Equivalence </td><td class="c2"> 1.2 </td><td class="c2"> 7, 10, 12, 20, 24, 41 </td></tr>
+<tr class="r6"><td class="c1">Predicates and Quantifiers </td><td class="c2"> 1.3 </td><td class="c3"> 10, 14, 25, 37, 39, 40 </td></tr>
+<tr class="r7"><td class="c1">Nested Quantifiers </td><td class="c2"> 1.4 </td><td class="c3"> 6, 10, 16, 20, 24, 28, 32   </td></tr>
+<tr class="r8"><td class="c1">Rules of Inference </td><td class="c2"> 1.5 </td><td class="c3"> 3, 4, 6, 9, 16, 23, 24, 30 </td></tr>
+<tr class="r9"><td class="c1">Introduction to Proofs </td><td class="c2"> 1.6 </td><td class="c3"> 10, 15, 17, 27, 38, 41 
+</td></tr></table>
+<h3>From Kenneth H. Rosen (Indian Adaptation), 7th edition</h3>
+<p></p>
+<table id="rosen_problem_set_1">
+<tr class="r1"><td class="c1"><b>Topic</b> </td><td class="c2"> <b>Section</b> </td><td class="c3"> <b>Problems</b> </td></tr>
+<tr class="r2"><td class="c1">Propositional Logic </td><td class="c2"> 1.1 </td><td class="c3"> 5, 8, 10, 11, 15, 22, 23, 47  </td></tr>
+<tr class="r3"><td class="c1">Propositional Equivalence </td><td class="c2"> 1.2 </td><td class="c2"> 7, 10, 12, 20, 24, 41 </td></tr>
+<tr class="r5"><td class="c1">Predicates and Quantifiers </td><td class="c2"> 1.3 </td><td class="c3"> 10, 14, 25, 37, 39, 40 </td></tr>
+<tr class="r6"><td class="c1">Nested Quantifiers </td><td class="c2"> 1.4 </td><td class="c3"> 6, 10, 16, 20, 24, 28, 32,  </td></tr>
+<tr class="r7"><td class="c1">Rules of Inference </td><td class="c2"> 1.5 </td><td class="c3"> 3, 4, 6, 9, 16, 23, 24, 30 </td></tr>
+<tr class="r8"><td class="c1">Introduction to Proofs </td><td class="c2"> 1.6 </td><td class="c3"> 10, 15, 17, 27, 38, 41 
+</td></tr></table>
+<p>
+</p>
+<div class="codeblock">
+<div class="blocktitle">Problem 1:</div>
+<div class="blockcontent"><pre>
+For the following english argument, define the required propositions/predicates to translate  these into logic/argument form.
+Finally, check if the argument form is valid.
+
+All CSE 173 students are human.
+Some CSE 173 students are travellers
+------------------------------------
+Some humans are logical travellers
+</pre></div></div>
+<p></p>
+<div class="codeblock">
+<div class="blocktitle">Problem 2:</div>
+<div class="blockcontent"><pre>
+Prove that the below hypotheses lead to the conclusion:
+
+If you send me a message in Piazza, then I will finish the of HW problem,
+If you do not send me a message in Piazza, then I will go to bed early, and
+If I go to bed early, then I will feel better,
+-------------------------------------------------------------------------------
+If I do not finish HW problem, then I will feel better.
+</pre></div></div>
+<div class="codeblock">
+<div class="blocktitle">Problem 3:</div>
+<div class="blockcontent"><pre>
+Prove that the following argument form is valid; use logical equivalence and rules of inferences done in class.
+
+a disjuction b
+a --&gt; p
+---------------------
+q
+</pre></div></div>
+<p></p>
+<div class="codeblock">
+<div class="blocktitle">Problem 4:</div>
+<div class="blockcontent"><pre>
+Prove the conclusion for a set of given premises: i) negation q, ii) p --&gt; q, iii) negation p --&gt; (s disjuntion q),
+and a conclusion s.
+</pre></div></div>
+<p></p>
+<div class="codeblock">
+<div class="blocktitle">Problem 5:</div>
+<div class="blockcontent"><pre>
+Prove that square root of 5 is irrational.
+</pre></div></div>
+<p></p>
+<div class="codeblock">
+<div class="blocktitle">Problem 6:</div>
+<div class="blockcontent"><pre>
+Prove that the following argument form is valid; use logical equivalence and rules of inferences done in class.
+
+a disjuntion b
+a --&gt; p
+b --&gt; p
+----------------------
+p
+</pre></div></div>
+<p></p>
+<h2>Functions, Sequence and Summations</h2>
+<p></p>
+<h3>From  Kenneth H. Rosen, 7th edition</h3>
+<p></p>
+<table id="rosen_problem_set_1">
+<tr class="r1"><td class="c1"><b>Topic</b> </td><td class="c2"> <b>Section</b> </td><td class="c3"> <b>Problems</b> </td></tr>
+<tr class="r2"><td class="c1">Set </td><td class="c2"> 2.1 </td><td class="c3"> 1, 14, 15, 19, 27, 32, 33, 40, 41, 44  </td></tr>
+<tr class="r3"><td class="c1">Set operations </td><td class="c2"> 2.2 </td><td class="c3"> 4, 12, 14, 16, 18, 26, 35, 36, 48 </td></tr>
+<tr class="r4"><td class="c1">Functions </td><td class="c2"> 2.3 </td><td class="c3"> 2, 12, 13, 15, 21, 23, 25, 30, 36, 38, 39 </td></tr>
+<tr class="r5"><td class="c1">Sequence and Summations </td><td class="c2"> 2.4 </td><td class="c3"> 6, 9, 12, 15, 26, 29, 30, 33, 34, 39, 40, 43 </td></tr>
+<tr class="r6"><td class="c1">Cardinality of Sets </td><td class="c2"> 2.5 </td><td class="c3"> 1, 2, 3, 4  
+</td></tr></table>
+<h2>Induction and Recursion</h2>
+<p></p>
+<h3>From  Kenneth H. Rosen, 7th edition</h3>
+<p></p>
+<table id="rosen_problem_set_1">
+<tr class="r1"><td class="c1"><b>Topic</b> </td><td class="c2"> <b>Section</b> </td><td class="c3"> <b>Problems</b> </td></tr>
+<tr class="r2"><td class="c1">Mathematical Induction </td><td class="c2"> 5.1 </td><td class="c3"> 3, 4, 5, 7, 16, 31 </td></tr>
+<tr class="r3"><td class="c1">Strong induction </td><td class="c2"> 5.2 </td><td class="c3"> <b>Optional</b> </td></tr>
+<tr class="r4"><td class="c1">Recursion </td><td class="c2"> 5.3 </td><td class="c3"> 3, 8, 12, 23, 24, 27 
+</td></tr></table>
+<div id="footer">
+<div id="footer-text">
+Page generated 2021-05-29 17:57:34 Bangladesh Standard Time, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<link rel="stylesheet" href="main.css" type="text/css" />
+<title>Inference</title>
+<!-- MathJax -->
+	<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	</script>
+	<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+	  TeX: { equationNumbers: { autoNumber: "AMS" } }
+	});
+	</script>
+<!-- End MathJax -->
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">Menu</div>
+<div class="menu-item"><a href="index.html">Home</a></div>
+<div class="menu-category">Course Information</div>
+<div class="menu-item"><a href="CSE_173_content.pdf">Syllabus</a></div>
+<div class="menu-category">Lectures</div>
+<div class="menu-item"><a href="CSE_173/CSE_173_INTRODUCTION.pdf">Part&nbsp;0:&nbsp;Introduction</a></div>
+<div class="menu-item"><a href="CSE_173/CSE_173_PROPOSITIONAL_LOGIC_FALL_2018.pdf">Part&nbsp;1:&nbsp;Propositional&nbsp;Logic</a></div>
+<div class="menu-item"><a href="CSE_173/CSE_173_PREDICATE_QUANTIFIER_FALL_2018.pdf">Part&nbsp;2:&nbsp;Predicate&nbsp;Logic</a></div>
+<div class="menu-item"><a href="CSE_173/CSE_173_RULE_OF_INFERENCE_FALL_2018.pdf">Part&nbsp;3:&nbsp;Rules&nbsp;of&nbsp;Inference</a></div>
+<div class="menu-item"><a href="CSE_173/CSE_173_PROOF_TECHNIQUES_FALL_2018.pdf">Part&nbsp;4:&nbsp;Proof&nbsp;Techniques</a></div>
+<div class="menu-item"><a href="CSE_173/CSE_173_SET_FUNCTIONS.pdf">Part&nbsp;5:&nbsp;Set,&nbsp;Functions</a></div>
+<div class="menu-item"><a href="CSE_173/CSE_173_SUM_SEQUENCE.pdf">Part&nbsp;6:&nbsp;Sum,&nbsp;Sequence</a></div>
+<div class="menu-item"><a href="CSE_173/CSE_173_RELATION.pdf">Part&nbsp;7A:&nbsp;Relations</a></div>
+<div class="menu-item"><a href="CSE_173/CSE_173_RELATION_II.pdf">Part&nbsp;7B:&nbsp;Relations</a></div>
+<div class="menu-item"><a href="CSE_173/CSE_173_RECURSION_COUNTING.pdf">Part&nbsp;8:&nbsp;Recursion&nbsp;and&nbsp;Counting</a></div>
+<div class="menu-item"><a href="CSE_173/CSE_173_GRAPHS.pdf">Part&nbsp;9:&nbsp;Graphs</a></div>
+<div class="menu-category">Homeworks</div>
+<div class="menu-item"><a href="CSE_173/CSE_173_HW_0_FALL_2018.pdf">HW0:&nbsp;Truth&nbsp;Table,&nbsp;Propositions</a></div>
+<div class="menu-item"><a href="CSE_173/CSE_173_HW_0_FALL_2018_SOLN.pdf">HW0:&nbsp;Solution</a></div>
+<div class="menu-item"><a href="CSE_173/CSE_173_HW_1_FALL_2018.pdf">HW1:&nbsp;Propositional&nbsp;logic&nbsp;and&nbsp;Quantifiers</a></div>
+<div class="menu-item"><a href="CSE_173/CSE_173_HW_1_FALL_2018_SOLN.pdf">HW1:&nbsp;Solution</a></div>
+<div class="menu-item"><a href="CSE_173/CSE_173_HW_2_FALL_2018.pdf">HW2:&nbsp;Predicate&nbsp;logic&nbsp;and&nbsp;Quantifiers</a></div>
+<div class="menu-item"><a href="CSE_173/CSE_173_HW_2_FALL_2018_SOLN.pdf">HW2:&nbsp;Solution</a></div>
+<div class="menu-item"><a href="CSE_173/CSE_173_HW_3_FALL_2018.pdf">HW3:&nbsp;Proof&nbsp;Techniques</a></div>
+<div class="menu-item"><a href="CSE_173/CSE_173_HW_3_FALL_2018_SOLN.pdf">HW3:&nbsp;Solution</a></div>
+<div class="menu-item"><a href="CSE_173/CSE_173_HW_4_FALL_2018.pdf">HW4:&nbsp;Sets&nbsp;and&nbsp;Functions</a></div>
+<div class="menu-item"><a href="CSE_173/CSE_173_HW_4_FALL_2018_SOLN.pdf">HW4:&nbsp;Solution</a></div>
+<div class="menu-category">Additional Tasks</div>
+<div class="menu-item"><a href="CSE_173_IN_CLASS.html">Propositional&nbsp;Logic</a></div>
+<div class="menu-item"><a href="CSE_173/CSE_173_GROUP_TASK.pdf">Group&nbsp;Task</a></div>
+<div class="menu-category">Practice Problems</div>
+<div class="menu-item"><a href="PP_PL.html">Set&nbsp;1</a></div>
+<div class="menu-item"><a href="CSE_173/CSE_173_PRACTICE_PROBLEMS_ALL.pdf">Set&nbsp;2</a></div>
+<div class="menu-item"><a href="CSE_173/CSE_173_PRACTICE_PROBLEMS.pdf">Solved&nbsp;Problems&nbsp;I</a></div>
+<div class="menu-item"><a href="CSE_173/CSE_173_PRACTICE_PROBLEMS_II.pdf">Solved&nbsp;Problems&nbsp;II</a></div>
+<div class="menu-category">Student Evaluation</div>
+<div class="menu-item"><a href="CSE_173_EXAM.html">Exams&nbsp;and&nbsp;Quizzes</a></div>
+<div class="menu-category">Additional Content</div>
+<div class="menu-item"><a href="CSE_173/CHE_173_NUMBER_SETS.pdf">Number&nbsp;Sets</a></div>
+<div class="menu-item"><a href="CSE_173_RULES_OF_INFERENCE.html" class="current">Logic</a></div>
+<div class="menu-item"><a href="CSE_173_CRIB_SHEET.html">Crib&nbsp;Sheet</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Inference</h1>
+</div>
+<p>Inference means reasoning to draw conclusion from a given set of information. For instance, <br />
+<i> 
+Man is Mortal.<br />
+Socrates is human.<br />
+Therefore, <br />
+Socrates will die.</i> </p>
+<h2>A few rules</h2>
+<p><b>Modus Ponens:</b></p>
+<p>\(\begin{array}{rl}
+&amp; p \\
+&amp; p \to q \\
+\therefore &amp; q
+\end{array}\) </p>
+<ul>
+<li><p>Test </p>
+</li>
+<li><p>test 2</p>
+</li>
+</ul>
+<p><b>Modus Tollens</b> </p>
+<p><b>Hypothetical Syllogism</b></p>
+<p><b>Simplification</b></p>
+<p><b>Resolution</b></p>
+<p><b>Conjunction</b></p>
+<p><b>Disjunctive Syllogism</b>  </p>
+<h2>Example 1</h2>
+<p><b>Premises:</b> <i>It is not sunny this afternoon and it is colder than yesterday. We will go swimming only if it is sunny. If we
+do not go swimming, then we will take a canoe trip. If we take a canoe trip, then we will be home by sunset.</i> </p>
+<p><b>Conclusion:</b> We will be home by sunset.</p>
+<p>Let's apply rules of inference to see if the conclusion can be reached.<br /><br /></p>
+<ol>
+<li><p>\(\neg p \wedge q  \;\;\;(Premise\;1)\)</p>
+</li>
+<li><p>\( r \rightarrow p  \;\;\;(Premise\;2)\)</p>
+</li>
+<li><p>\( \neg r \rightarrow s \;\;\;(Premise\;3)\)</p>
+</li>
+<li><p>\( s \rightarrow t  \;\;\;(Premise\;4)\)</p>
+</li>
+<li><p>\( \neg p  \;\;\; (Simplification\;rule\;on\;1)\)</p>
+</li>
+<li><p>\( \neg r  \;\;\; (Moduls\;Tollens\;between\;1\;and\;5)\) </p>
+</li>
+<li><p>\( s \;\;\; (Modus\;Ponens\;between\;3\;and\;6)\)</p>
+</li>
+<li><p>\( t \;\;\; (Modus\;Ponens\;between\;4\;and\;7)\)<br /></p>
+</li>
+</ol>
+<h2>Example 2</h2>
+<p><b>Premises:</b> <i>A student in this class has not read the book. Everyone in this class passed the 
+first exam. Therefore, someone who passed the first exam has not read the book.</i> <br /></p>
+<p>Assuming <i>All NSU students</i> as the domain. <br /><br /> 
+\(C(x)\): x is student in this class. <br />
+\(B(x)\): x has read the book. <br />  
+\(P(x)\): x has passed the exam. <br /></p>
+<p>By applying rules of inference, <br /><br /></p>
+<ol>
+<li><p>\(\exists x (C(x) \wedge \neg B(x))\)</p>
+</li>
+<li><p>\(\forall x (C(x) \rightarrow P(x))\) </p>
+</li>
+<li><p>\(C(a) \wedge \neg B(x)\;\;\;(Existential\;instantiation\; of\;1)\)</p>
+</li>
+<li><p>\(C(a) \;\;\;\;\; (Simplification\;of\;3)\)</p>
+</li>
+<li><p>\(C(a) \rightarrow P(a)\;\;\; (Universal\;instantiation\;of\;2)\)</p>
+</li>
+<li><p>\(P(a)\;\;\;(Modus\;Ponens\;of\;4\;and\;5)\)</p>
+</li>
+<li><p>\(\neg B(a)\;\;\;(Simplification\;of\;3)\)</p>
+</li>
+<li><p>\(P(a) \wedge \neg B(a) (Conjunction\;of\;6\;and\;7)\)</p>
+</li>
+<li><p>\(\exists x (P(a) \wedge \neg B(a)) (Existential\;generalization\;of\;8)\)</p>
+</li>
+</ol>
+<div id="footer">
+<div id="footer-text">
+Page generated 2021-05-29 18:23:09 Bangladesh Standard Time, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>
